@@ -1,16 +1,17 @@
-
 * { 
   margin: 0; 
   padding: 0; 
   overflow: overlay; /* efeito na narra de rolagem */
   scroll-behavior: smooth; /* define rolagem altomatica suave */
-  
+  font-size: 1.05em;
 }
 
-p { padding: 30px;}
+a:link         {color: #FFFFFF; text-decoration: none;}
+a:visited      {color: #ffffff; text-decoration: none;}
+a:hover        {color: #ffa600; text-decoration: none;}
+a:active       {color: #fff1d7; text-decoration: none;}  
 
-
-
+table { font-family: basix; }
 
 ::-webkit-scrollbar {
   width: 18px;
@@ -30,29 +31,22 @@ p { padding: 30px;}
 
 
 
-@font-face  {font-family: "basix"; src: url("fonts/basix.ttf"); }
-table {font-family: basix; }
-
-a:link         {color: #FFFFFF; text-decoration: none;}
-a:visited      {color: #ffffff; text-decoration: none;}
-a:hover        {color: #ffc400; text-decoration: none;}
-a:active       {color: #ff8800; text-decoration: none;}  
-
-
+p {padding: 20px;}
+h2 {padding: 20px;}
 
 
 
 #cabecalho {
   position: fixed; 
   width: 100%; height: 130px;
-  background-color:#222; 
+  background-color:#161616; 
   z-index:999; /* posicao fixa - z index na frente */
   overflow: hidden; /* barras de rolagem escondidas */
   }
 
 #tabela {
   margin: auto;
-  background-color: #ffc400;
+
 }
 
 
@@ -73,7 +67,6 @@ a:active       {color: #ff8800; text-decoration: none;}
   bottom: 10%;
   left: 5%;
   width: 30%;
-  font-size: 16px;
 } /* div da ilustração QUEM SOU EU */
 
 
@@ -83,7 +76,7 @@ a:active       {color: #ff8800; text-decoration: none;}
 
 #grupo2 { 
   width: 100%; overflow: hidden;
-  background-color:#222; 
+  background-color:#161616; 
   display: flex;
   flex-wrap: wrap; 
   padding-top: 50px;
@@ -95,7 +88,7 @@ a:active       {color: #ff8800; text-decoration: none;}
   width: 410; height: auto; 
   margin-top: 30 ; margin-left: auto; margin-right: auto;
   background-clip: content-box; /* define posicao da borda para fora da div */
-  border: 10px solid transparent;
+  border: 10px solid transparent; /* borda para nao colidir divs */
   text-align: right;
   color: #FFFFFF;
   overflow: hidden; /* esconde rolagem */
