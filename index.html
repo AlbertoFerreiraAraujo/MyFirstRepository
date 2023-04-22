@@ -17,11 +17,11 @@
 
 
 
-<body onload="trocarImagem()">
+<body onload="anterior()">
 
 
 <div id="cabecalho">
-  <table id="tabela" width="90%" height="100% " cellspacing="0" cellpadding="0" >
+  <table id="tabela" width="90%" height="130" cellspacing="0" cellpadding="0" >
     <tr>
     <td  width="70%" NOWRAP> 
    
@@ -44,19 +44,16 @@
     </td>
     </tr>
     </table> 
-   
 </div>
 
-<div id="blur"></div>
 <a name="secao1"></a>
-
 <br>
-<h2 id="pula">INICIO</h2>
 
+<h1 id="pula">INICIO</h1>
 
-<p>Todas as informacoes pessoais recolhidas, podem ou serao usadas para o ajudar a tornar a sua visita do Site ou experiencia do aplicativo o mais produtivo e agradavel possivel.<br>
-Para mim e de grande importancia a garantia da confidencialidade dos dados pessoais dos utilizadores do servico prestado.<br>Todas as informacoes pessoais relativas a membros, assinantes, clientes ou visitantes que adquirem os aplicativos, serao tratadas em concordancia com a Lei da Protecao de Dados Pessoais de 26 de outubro de 1998 (Lei n. 67/98).<br>A informacao pessoal recolhida pode incluir o seu nome, e-mail, numero de telefone e/ou telefone movel, localizacao, data de nascimento, entre outros.<br>Essas informacoes podem ser utilizadas para fornecer, manter, proteger e melhorar nossos servicos assim como desenvolver novos aplicativos, oferecer ao usuario um conteudo especifico fornecendo novas funcoes, resultado melhorado de anuncios, com base na classificao etaria e interesse do usuario.<br>Ao uso dos servicos se assume a aceitacao deste acordo de privacidade. Me reservo ao direito de nao alterar este acordo sem aviso previo, comunicado que sera feito atraves do corpo principal do site/aplicativo/game. 
-<br>Deste modo, se preferir podera consultar a nossa politica de privacidade com regularidade de forma a estar sempre atualizado.</p>
+<p>
+  Todas as informacoes pessoais recolhidas, podem ou serao usadas para o ajudar a tornar a sua visita do Site ou experiencia do
+</p>
 
 <br>
 
@@ -69,7 +66,7 @@ Para mim e de grande importancia a garantia da confidencialidade dos dados pesso
 
 
 
-<h2><a name="secao2"></a>QUEM SOU EU</h2>
+<h1><a name="secao2"></a>QUEM SOU EU</h1>
 
 
 <figure id="grupo1"> <img src="imagens/fundo/fundo.svg" width="100%"> 
@@ -81,7 +78,7 @@ Para mim e de grande importancia a garantia da confidencialidade dos dados pesso
 
 
 
-<h2><a name="secao3"></a>PORTFOLIO</h2>
+<h1><a name="secao3"></a>PORTFOLIO</h1>
 <div id="grupo2">  
   <div class="grupo3">  <a href="" target="_blank"><img src="imagens/links/4_pm.png"></a> <p>texto 1 </p></div>
   <div class="grupo3">  <a href="https://riverraid40th.netlify.app" target="_blank"><img src="imagens/links/2_rr.svg"></a> <p>texto 2 </p></div>
@@ -94,21 +91,17 @@ Para mim e de grande importancia a garantia da confidencialidade dos dados pesso
 </div>
 
 <p>
-<br>
-
-
-Este site possui ligacoes para outros dominios, os quais ao meu ver, podem conter informacoes ou ferramentas uteis para os visitantes. Esta politica de privacidade nao e aplicada a sites de terceiros, e se restringe apenas ao conteudo criado exclusivamente por mim.</p>
-<br>
-<p>Esta politica se presta a todos os nossos servicos gratuitos ou nao, e valida os aplicativos disponiveis apartir das lojas virtuais APP Store, Play Store e Windows Store.</p>
-<br>
-
-
-<h2><a name="secao4"></a>CONTATO</h2>
+informacoes ou ferramentas uteis para os visitantes. Esta politica de privacidade nao e aplicada a sites de terceiros, e se restringe apenas ao conteudo criado exclusivamente por mim.</p>
+</p>
 
 <br>
-<p>Tal como outros websites, coletamos e utilizamos informacao contida nos anuncios. Estas, incluem o seu endereco IP (Internet Protocol), o seu ISP (Internet Service Provider, como o Sapo, Clix, ou outro), o browser que utilizou ao visitar o nosso website (como o Internet Explorer ou o Firefox), o tempo da sua visita e que paginas visitou dentro do nosso website.</p>
+<h1><a name="secao4"></a>CONTATO</h1>
 <br>
-<br>
+
+<p>
+  Tal como outros websites, coletamos e utilizamos informacao contida nos anuncios. Estas, incluem o seu endereco IP (Internet Protocol), o seu ISP (Internet Service Provider, como o Sapo, Clix, ou outro), o browser que utilizou ao visitar o nosso website (como o Internet Explorer ou o Firefox), o tempo da sua visita e que paginas visitou dentro do nosso website.
+</p>
+
 <br>
 <br>
 
@@ -122,14 +115,23 @@ Este site possui ligacoes para outros dominios, os quais ao meu ver, podem conte
 <script>
 const imagens = ["imagens/banner/enduro.svg", "imagens/banner/isometrico.svg", "imagens/banner/logo.svg", "imagens/banner/smw.png"];
 let i = 0;
-function trocarImagem() {
+function proxima() {
   minhaImagem.src = imagens[i];
   i++;
   if (i >= imagens.length) {
     i = 0;
   }
 }
-setInterval(trocarImagem, 4000); 
+/* setInterval(proxima, 4000); */
+
+function anterior() {
+  minhaImagem.src = imagens[i];
+  i--;
+  if (i < 0) {
+    i = 3;
+  }
+}
+setInterval(anterior, 4000); 
 </script>  
 
 
