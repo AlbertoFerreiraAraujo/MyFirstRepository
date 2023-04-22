@@ -6,14 +6,15 @@
   
 }
 
-body { font-size: 150%; }
+p { font-size: 150%; }
+figcaption { font-size: 200%; }
 
 a:link         {color: #FFFFFF; text-decoration: none;}
 a:visited      {color: #ffffff; text-decoration: none;}
 a:hover        {color: #ffa600; text-decoration: none;}
 a:active       {color: #fff1d7; text-decoration: none;}  
 
-table { font-family: basix; font-size: 100%;}
+table { font-family: basix; }
 
 ::-webkit-scrollbar {
   width: 18px;
@@ -34,8 +35,6 @@ table { font-family: basix; font-size: 100%;}
 p {padding: 20px;}
 h1 {padding: 20px;}
 
-
-
 #cabecalho {
   position: fixed; 
   width: 100%; height: 130px;
@@ -49,13 +48,9 @@ h1 {padding: 20px;}
 
 }
 
-
-
 #pula {
   margin-top: 130px; /* pula espaco entre do cabecalho para o comeco do corpo */
 }
-
-
 
 #grupo1 { 
   overflow: auto hidden;
@@ -68,11 +63,6 @@ h1 {padding: 20px;}
   left: 5%;
   width: 30%;
 } /* div da ilustração QUEM SOU EU */
-
-
-
-
-
 
 #grupo2 { 
   width: 100%; overflow: hidden;
