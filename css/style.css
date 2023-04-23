@@ -7,7 +7,7 @@
 }
 
 body { font-size: 100%; }
-div{font-size: 1.5em; }
+div{font-size: 1.5em; background-color: rgb(181, 250, 227);}
 
 a:link         {color: #FFFFFF; text-decoration: none;}
 a:visited      {color: #ffffff; text-decoration: none;}
