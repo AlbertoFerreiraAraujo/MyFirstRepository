@@ -7,7 +7,7 @@
 }
 
 body { font-size: 100%; }
-
+div{font-size: 1.5em; }
 
 a:link         {color: #FFFFFF; text-decoration: none;}
 a:visited      {color: #ffffff; text-decoration: none;}
@@ -31,7 +31,7 @@ table { font-family: basix; }
   border-radius: 10px;
 } 
   
- p, h1, h2 {padding: 0px 20px 0px 20px}
+ p, h1, h2 {padding: 0px 5% 0px 5%}
 
 #cabecalho {
   position: fixed; 
@@ -50,7 +50,7 @@ table { font-family: basix; }
   width: 80%;
   margin: auto;
   overflow: hidden; 
-  background-color: #ffa600;
+  
 }
 
 #pula {
@@ -67,8 +67,6 @@ table { font-family: basix; }
   bottom: 15%;
   left: 5%;
   width: 30%;
-  
-  font-size: 1.5em;
 } /* div da ilustração QUEM SOU EU */
 
 #grupo2 { 
