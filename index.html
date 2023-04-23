@@ -43,42 +43,44 @@
     
     </td>
     </tr>
-    </table> 
-</div>
+    </table>
+  </div>
 
 <a name="secao1"></a>
-<br>
-
 <h1 id="pula">INICIO</h1>
+<h2 >QUEM SOU EU</h2>
 
+<div id="dadosPessoais">
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <p>
   Todas as informacoes pessoais recolhidas, podem ou serao usadas para o ajudar a tornar a sua visita do Site ou experiencia do Site ou experiencia 
 </p>
-
-<br>
-
-    <picture>
-      <source media="(max-width: 1080px)" srcset="imagens/icones/e.png">
-      <img src="imagens/banner/enduro.svg" width="100%" id="minhaImagem" >
-    </picture>
-
-<br>
+</div>
 
 
 
-<h1><a name="secao2"></a>QUEM SOU EU</h1>
 
 
-<figure id="grupo1"> <img src="imagens/fundo/fundo.svg" width="100%" > 
+
+
+<a name="secao2">w</a>
+
+
+
+
+<figure id="grupo1"> 
+  <picture>
+    <source media="(max-width: 1080px)" srcset="imagens/fundo/portrait.svg">
+    <img src="imagens/fundo/landscape.svg" width="100%" > </picture>
 <figcaption>
   Tal como outros websites, coletamos e utilizamos informacao contida nos anuncios. Estas, incluem o seu endereco IP (Internet Protocol), o seu ISP (Internet Service Provider, como o Sapo, Clix, ou outro), o browser que utilizou ao visitar o nosso website (como o Internet Explorer ou o Firefox), o tempo da sua visita e que paginas visitou dentro do nosso website. UTILIZANDO FIGURE + FIGCAPTION
-</figcaption>   
+  <a name="secao3"></a></figcaption>   
 </figure>
 
 
 
 
-<h1><a name="secao3"></a>PORTFOLIO</h1>
+<h1>PORTFOLIO</h1>
 <div id="grupo2">  
   <div class="grupo3">  <a href="" target="_blank"><img src="imagens/links/4_pm.png"></a> <p>texto 1 </p></div>
   <div class="grupo3">  <a href="https://riverraid40th.netlify.app" target="_blank"><img src="imagens/links/2_rr.svg"></a> <p>texto 2 </p></div>
@@ -109,30 +111,4 @@ informacoes ou ferramentas uteis para os visitantes. Esta politica de privacidad
 
 
 </body>
-
-
-
-<script>
-const imagens = ["imagens/banner/enduro.svg", "imagens/banner/isometrico.svg", "imagens/banner/logo.svg", "imagens/banner/smw.png"];
-let i = 0;
-function proxima() {
-  minhaImagem.src = imagens[i];
-  i++;
-  if (i >= imagens.length) {
-    i = 0;
-  }
-}
-/* setInterval(proxima, 4000); */
-
-function anterior() {
-  minhaImagem.src = imagens[i];
-  i--;
-  if (i < 0) {
-    i = 3;
-  }
-}
-setInterval(anterior, 4000); 
-</script>  
-
-
 </html>
