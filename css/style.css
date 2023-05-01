@@ -7,7 +7,7 @@
 }
 
 body { font-size: 100%; }
-div {font-size: 1.5em; /*background-color: rgb(181, 250, 227);*/} 
+ 
 
 a:link         {color: #ffffff; text-decoration: none;font-size: large;}
 a:visited      {color: #ffffff; text-decoration: none;font-size: large;}
@@ -62,32 +62,35 @@ table { font-family: basix; }
   margin-top: 130px; /* pula espaco entre do cabecalho para o comeco do corpo */
 }
 
+
+
 #grupo1 { 
   position: relative;
   overflow: auto hidden;
   display: inline-block;
-  
 }
-#grupo1 figcaption {
+
+#jogar {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  width: 250px;
+  padding: 20px 0 20px 0;
+  text-align: center;
+  border-radius: 2em;
+  background-color:#ffae00;
+
+
+
+} /* botao jogar dentro do grupo 1 */
+
+#comentario {
   position: absolute;
   bottom: 15%;
   left: 5%;
   width: 30%;
 } /* div QUEM SOU EU */
 
-#jogar {
-  position: absolute;
-  top: 800px;
-  left: 50px;
-  width: 300px;
-  padding: 20px 0 20px 0;
-  text-align: center;
-  font-size: 22px;
-  color: #ffffff;
-  border-radius: 2em;
-  background-color:#ffae00;
- 
-}
 
 
 
@@ -100,7 +103,8 @@ table { font-family: basix; }
 
 
 
-#grupo2 { 
+
+#portfolio { 
   width: 100%; overflow: hidden;
   background-color:#111111; 
   display: flex;
@@ -117,14 +121,14 @@ table { font-family: basix; }
   background-clip: content-box; /* define posicao da borda para fora da div */
   border: 10px solid transparent; /* borda para nao colidir divs */
   text-align: right;
-  
+  color:ffae00 ;
   overflow: hidden; /* esconde rolagem */
-  /* background-color: #ff8800; */
- } /* grupo de imagens do PORTFOLIO */
+   /* background-color: #ff8800; */
+} /* grupo de imagens do PORTFOLIO */
 
 .grupo3 img {
   margin: auto;
   display: block;
   padding-top: 10px;
   width: 390;
-  }
+}
