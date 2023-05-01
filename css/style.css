@@ -21,14 +21,14 @@ table { font-family: basix; }
 }
 
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 10px 10px #22222254;
+  box-shadow: inset 0 0 10px 10px transparent;
   border: solid 3px transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-  box-shadow: inset 0 0 10px 10px #000000b6;
+  box-shadow: inset 0 0 10px 10px #ffae00;
   border: solid 3px transparent;
-  border-radius: 10px;
+ 
 } 
   
  p, h1, h2 {padding: 0px 5% 0px 5%}
@@ -36,7 +36,7 @@ table { font-family: basix; }
 #cabecalho {
   position: fixed; 
   width: 100%; height: 130px;
-  background-color:#ffa600; 
+  background-color:#111111; 
   z-index:999; /* posicao fixa - z index na frente */
   overflow: hidden; /* barras de rolagem escondidas */
 }
@@ -63,25 +63,52 @@ table { font-family: basix; }
 }
 
 #grupo1 { 
+  position: relative;
   overflow: auto hidden;
   display: inline-block;
-  position: relative;
+  
 }
 #grupo1 figcaption {
   position: absolute;
   bottom: 15%;
   left: 5%;
   width: 30%;
-} /* div da ilustração QUEM SOU EU */
+} /* div QUEM SOU EU */
+
+#jogar {
+  position: absolute;
+  top: 800px;
+  left: 50px;
+  width: 300px;
+  padding: 20px 0 20px 0;
+  text-align: center;
+  font-size: 22px;
+  color: #ffffff;
+  border-radius: 2em;
+  background-color:#ffae00;
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
 
 #grupo2 { 
   width: 100%; overflow: hidden;
-  background-color:#ff9408; 
+  background-color:#111111; 
   display: flex;
   flex-wrap: wrap; 
   padding-top: 50px;
   padding-bottom: 10px;
-} /* div responsiva do campo PORTFOLIO */
+} /* div PORTFOLIO */
+
 
 .grupo3 {
   display: inline-block;
@@ -101,4 +128,3 @@ table { font-family: basix; }
   padding-top: 10px;
   width: 390;
   }
-
